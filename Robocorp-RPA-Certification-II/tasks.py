@@ -31,8 +31,6 @@ def fill_order_form(order):
     page.click("text=Preview")
     while page.is_visible("#order-completion") == False:
         page.click("#order")
-        if page.is_visible("#order-completion"):
-            break
 
 def fill_form_with_csv_data():
     """Read data from csv and fill in the order form"""
@@ -44,6 +42,7 @@ def fill_form_with_csv_data():
         order_another_robot()
 
 def order_another_robot():
+    """Click the 'Order another robot' button"""
     page.click("text=Order another robot")
 
 def export_as_pdf(order):
@@ -59,9 +58,11 @@ def export_as_pdf(order):
         output_path=f"to_be_zipped/order_{order_no}.pdf")
 
 def create_zip():
+    """Saving all PDF order receipts in a ZIP directory"""
     Archive().archive_folder_with_zip("to_be_zipped", "Archived_orders.zip", recursive=True)
     
 def cleanup():
+    """Deleting unnecessary directories"""
     FileSystem().remove_directory("temp", recursive=True)
     FileSystem().remove_directory("to_be_zipped", recursive=True)
 
