@@ -1,6 +1,6 @@
-from RPA.Tables import Tables
 from robocorp.tasks import task
 from robocorp import browser, http
+from RPA.Tables import Tables
 from RPA.PDF import PDF
 from RPA.FileSystem import FileSystem
 from RPA.Archive import Archive
