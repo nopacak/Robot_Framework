@@ -59,8 +59,7 @@ def export_as_pdf(order):
         output_path=f"to_be_zipped/order_{order_no}.pdf")
 
 def create_zip():
-    Archive().archive_folder_with_zip("to_be_zipped", "Archived_orders", recursive=True)
-    FileSystem().change_file_extension("Archived_orders", ".zip")
+    Archive().archive_folder_with_zip("to_be_zipped", "Archived_orders.zip", recursive=True)
     
 def cleanup():
     FileSystem().remove_directory("temp", recursive=True)
