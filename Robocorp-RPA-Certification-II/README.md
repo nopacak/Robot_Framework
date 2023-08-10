@@ -1,14 +1,22 @@
-# Template: Robot Framework - Minimal
+# Template: Python - Minimal
 
-This is the simplest template to start from.
+This template leverages the new Python open-source structure [robo](https://github.com/robocorp/robo), the [libraries](https://github.com/robocorp/robo#libraries) from to same project as well.
+The full power of [rpaframework](https://github.com/robocorp/rpaframework) is also available for you on Python as a backup while we implement new Python libraries.
 
-- Get started from a simple task template in `tasks.robot`.
-  - Uses [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) syntax.
-- You can configure your robot `robot.yaml`.
-- You can configure dependencies in `conda.yaml`.
+The template provides you with the basic structure of a Python project: logging out of the box and controlling your tasks without fiddling with the base Python stuff. The environment contains the most used libraries, so you do not have to start thinking about those right away. 
 
-## Learning materials
+👉 After running the bot, check out the `log.html` under the `output` -folder.
 
-- [Robocorp Developer Training Courses](https://robocorp.com/docs/courses)
-- [Documentation links on Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
-- [Example bots in Robocorp Portal](https://robocorp.com/portal)
+The template here is essentially empty, leaving you with a canvas to paint on.
+
+Do note that with Robocorp tooling you:
+- Do NOT need Python installed
+- Should NOT be writing `pip install..`; the [conda.yaml](https://github.com/robocorp/template-python/blob/master/conda.yaml) is here for a reason.
+- You do not need to worry about Python's main -functions and, most importantly, the logging setup
+
+🚀 Now, go get'em
+
+For more information, do not forget to check out the following:
+* [Robocorp Documentation -site](https://robocorp.com/docs)
+* [Portal for more examples](https://robocorp.com/portal)
+* [robo repo](https://github.com/robocorp/robo) as this will developed a lot...
