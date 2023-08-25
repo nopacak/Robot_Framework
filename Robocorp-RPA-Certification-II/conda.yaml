@@ -6,7 +6,7 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.9.16                 # https://pyreadiness.org/3.11
+  - python=3.11.4                 # https://pyreadiness.org/3.11
   - pip=22.1.2                    # https://pip.pypa.io/en/stable/news
   - pip:
     - rpaframework==26.1.0        # https://rpaframework.org/releasenotes.html
